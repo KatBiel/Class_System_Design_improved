@@ -102,6 +102,7 @@ class Task():
     def mark_complete(self):
         # Side-effects: sets the task property to True
         # returns nothing
+        pass
 
 class PhoneNumberExtractor():
 
@@ -278,4 +279,3 @@ task.title # => "Walk the dog"
 
 
 ## 5. Implement the Behaviour
-'''
