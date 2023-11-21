@@ -1,4 +1,7 @@
 class TaskList():
+    def __init__():
+        self.tasks = []
+
     def add(self, task):
         # task: instance of Task
         # returns nothing

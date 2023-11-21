@@ -12,4 +12,4 @@ def test_add_multiple_entries():
     diary.add(entry1)
     diary.add(entry2)
     diary.add(entry3)
-    diary.all() == [entry1, entry2, entry3]
+    assert diary.all() == [entry1, entry2, entry3]
