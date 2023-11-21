@@ -100,7 +100,7 @@ class Task():
         pass
         
     def mark_complete(self):
-        # Side-effects: sets the task property to False
+        # Side-effects: sets the task property to True
         # returns nothing
 
 class PhoneNumberExtractor():
@@ -155,8 +155,8 @@ diary.all() # => [entry1, entry2, entry3]
 
 '''When add multiple tasks, lists them in incomplete'''
 task_list = TaskList()
-task1 = "Walk the dog"
-task2 = "Feed the cats"
+task1 = Task("Walk the dog")
+task2 = Task("Feed the cats")
 task_list.add(task1)
 task_list.add(task2)
 task_list.all_incomplete() == [task1, task2]
@@ -165,8 +165,8 @@ task_list.all_complete() == []
 
 '''When add multiple tasks, and mark one task as completed'''
 task_list = TaskList()
-task1 = "Walk the dog"
-task2 = "Feed the cats"
+task1 = Task("Walk the dog")
+task2 = Task("Feed the cats")
 task_list.add(task1)
 task_list.add(task2)
 task1.mark_complete()

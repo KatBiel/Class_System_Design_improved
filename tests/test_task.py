@@ -1,5 +1,5 @@
-# from lib.task import *
+from lib.task import *
 
-# # Task
-# task = Task("Walk the dog")
-# task.title # => "Walk the dog"
+def test_task_contruction():
+    task = Task("Walk the dog")
+    assert task.title == "Walk the dog"
